@@ -17,16 +17,13 @@ struct Tab_View: View {
         TabView {
             // 2
             SignedIn_View()
-                // 3
                 .tabItem {
                     VStack {
                         Image(systemName: "person.circle")
                         Text("Home")
                     }
-            // 4
             }.tag(1)
             
-            // 5
             SettingsView()
                 .tabItem {
                     VStack {
