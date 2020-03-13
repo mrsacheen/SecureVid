@@ -20,7 +20,7 @@ struct ContentView: View {
                 //}
             if (session.session != nil){
                 
-                SignedIn_View()
+                Tab_View()
                     
                 }
             

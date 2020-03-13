@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		16453BAC91D5C6DEE45FDE1E /* Pods_SecureVid_SecureVidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892F007D22FE09A9E4AC17B3 /* Pods_SecureVid_SecureVidUITests.framework */; };
 		5873E844F0381F04E4B59F01 /* Pods_SecureVidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AFC276F13FEC1C97FE4346 /* Pods_SecureVidTests.framework */; };
+		9D52E90A241C41BB00AEC689 /* Tab_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52E909241C41BB00AEC689 /* Tab_View.swift */; };
+		9DA63D45241C451300A11DCF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA63D44241C451300A11DCF /* SettingsView.swift */; };
 		9DC8283224189B5B00842D5D /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8283124189B5B00842D5D /* CircleImage.swift */; };
 		9DC8283424189B9F00842D5D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8283324189B9F00842D5D /* LoginPage.swift */; };
 		9DE1BEA82418A096007CE83D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DE1BEA72418A096007CE83D /* GoogleService-Info.plist */; };
 		9DE1BEB02418AB75007CE83D /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1BEAF2418AB75007CE83D /* SignupPage.swift */; };
 		9DE1BEB42418ABEA007CE83D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1BEB32418ABEA007CE83D /* SessionStore.swift */; };
 		9DE1BEB62418BA1A007CE83D /* SignedIn_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1BEB52418BA1A007CE83D /* SignedIn_View.swift */; };
-		9DE1BEB82418BE20007CE83D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1BEB72418BE20007CE83D /* UIView.swift */; };
 		9DE1BEBA2418BFFD007CE83D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE1BEB92418BFFD007CE83D /* HomeView.swift */; };
 		9DE81A182418980F0035663F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE81A172418980F0035663F /* AppDelegate.swift */; };
 		9DE81A1A2418980F0035663F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE81A192418980F0035663F /* SceneDelegate.swift */; };
@@ -52,13 +53,14 @@
 		892F007D22FE09A9E4AC17B3 /* Pods_SecureVid_SecureVidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureVid_SecureVidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E316B6AEE8650BE34B4A5BD /* Pods-SecureVidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureVidTests.release.xcconfig"; path = "Target Support Files/Pods-SecureVidTests/Pods-SecureVidTests.release.xcconfig"; sourceTree = "<group>"; };
 		9250CD259FD4087761FBCE8A /* Pods-SecureVidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureVidTests.debug.xcconfig"; path = "Target Support Files/Pods-SecureVidTests/Pods-SecureVidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D52E909241C41BB00AEC689 /* Tab_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab_View.swift; sourceTree = "<group>"; };
+		9DA63D44241C451300A11DCF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9DC8283124189B5B00842D5D /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		9DC8283324189B9F00842D5D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		9DE1BEA72418A096007CE83D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9DE1BEAF2418AB75007CE83D /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		9DE1BEB32418ABEA007CE83D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		9DE1BEB52418BA1A007CE83D /* SignedIn_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedIn_View.swift; sourceTree = "<group>"; };
-		9DE1BEB72418BE20007CE83D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9DE1BEB92418BFFD007CE83D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9DE81A142418980F0035663F /* SecureVid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureVid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE81A172418980F0035663F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +169,8 @@
 				9DC8283324189B9F00842D5D /* LoginPage.swift */,
 				9DE1BEAF2418AB75007CE83D /* SignupPage.swift */,
 				9DE1BEB52418BA1A007CE83D /* SignedIn_View.swift */,
-				9DE1BEB72418BE20007CE83D /* UIView.swift */,
+				9D52E909241C41BB00AEC689 /* Tab_View.swift */,
+				9DA63D44241C451300A11DCF /* SettingsView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE81A182418980F0035663F /* AppDelegate.swift in Sources */,
+				9D52E90A241C41BB00AEC689 /* Tab_View.swift in Sources */,
 				9DE1BEB62418BA1A007CE83D /* SignedIn_View.swift in Sources */,
 				9DE1BEB42418ABEA007CE83D /* SessionStore.swift in Sources */,
 				9DC8283224189B5B00842D5D /* CircleImage.swift in Sources */,
@@ -448,8 +452,8 @@
 				9DE81A1A2418980F0035663F /* SceneDelegate.swift in Sources */,
 				9DE1BEBA2418BFFD007CE83D /* HomeView.swift in Sources */,
 				9DC8283424189B9F00842D5D /* LoginPage.swift in Sources */,
-				9DE1BEB82418BE20007CE83D /* UIView.swift in Sources */,
 				9DE81A1C2418980F0035663F /* ContentView.swift in Sources */,
+				9DA63D45241C451300A11DCF /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

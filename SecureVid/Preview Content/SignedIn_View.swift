@@ -14,16 +14,22 @@ struct SignedIn_View: View {
         session.listen()
     }
     var body: some View {
-       // Text("Welcome \( getuid())")
-        VStack{
-            Text("Welcome back \(session.session!.email ?? "user")")
-                       Button(action: session.signOut){
-                       Text("Sign Out")
-               }
+        NavigationView{
+             VStack{
+                        //Text("Welcome back \(session.session!.email ?? "user")")
+                        Text("Hello User")
+            //                       Button(action: session.signOut){
+            //                       Text("Sign Out")
+            //               }
+            }.navigationBarTitle("Home")
         }
+       // Text("Welcome \( getuid())")
+ 
+       
        
     }
 }
+
 struct SignedIn_View_Previews: PreviewProvider {
     static var previews: some View {
         SignedIn_View()
