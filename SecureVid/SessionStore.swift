@@ -1,5 +1,6 @@
 import SwiftUI
-import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 import Combine
 
 class SessionStore: ObservableObject {
@@ -10,7 +11,7 @@ class SessionStore: ObservableObject {
     func listen() {
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if let user = user {
-                self.session = User(uid: user.uid, email: user.email)
+                self.session = User(uid: user.uid,displayName: user.displayName, email: user.email)
             } else {
                 self.session = nil
             }
@@ -48,9 +49,11 @@ class SessionStore: ObservableObject {
 struct User {
     var uid: String
     var email: String?
+    var displayName: String?
     
-    init(uid: String, email: String?) {
+    init(uid: String,displayName: String?, email: String?) {
         self.uid = uid
         self.email = email
+        self.displayName = displayName
     }
 }

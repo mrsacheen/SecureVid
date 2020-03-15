@@ -35,6 +35,7 @@ struct LoginPage: View {
                 TextField("Email Address", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 350, height: 30)
+              
                     //.overlay(Rectangle().stroke(Color.blue, lineWidth: 1))
             
                 SecureField("Password", text: $password)

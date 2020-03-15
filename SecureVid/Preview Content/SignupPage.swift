@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+import FirebaseAuth
 
 struct SignupPage: View {
     @EnvironmentObject var session: SessionStore
@@ -25,6 +27,8 @@ struct SignupPage: View {
             }else{
                 self.email = ""
                 self.password = ""
+               // HomeView()
+                
             }
         }
     }
@@ -50,13 +54,18 @@ struct SignupPage: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 350, height: 30)
                    //.overlay(Rectangle().stroke(Color.blue, lineWidth: 1))
-                Button(action: signUp) {
-                           Text("SignUp")
-                            .fontWeight(.bold)
+                if (password != "" && password == confirmPassword){
+                    Button(action: signUp) {
+                            Text("SignUp")
+                                .fontWeight(.bold)
                                 
-                               .font(.title)
+                                .font(.title)
                                
                    }
+                }
+//                if (error == ""){
+//                    db.collection("")
+//                }
                 if (error != ""){
                     Text(error)
                     .fontWeight(.semibold)
@@ -68,8 +77,8 @@ struct SignupPage: View {
                
                }
                    
-               .padding()
-               .navigationBarTitle(Text("SignUp")).navigationBarHidden(false).foregroundColor(.purple)
+               //.padding()
+               .navigationBarTitle(Text("SignUp"))
                }
        }
 }

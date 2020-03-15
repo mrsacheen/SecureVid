@@ -16,7 +16,7 @@ struct HomeView: View {
                 CircleImage()
                 VStack{
                     LoginPage()
-                    Spacer(minLength: 1)
+                    //Spacer(minLength: 1)
                     HStack(){
                         Text("Already have an account?")
                             .foregroundColor(.purple)

@@ -10,14 +10,18 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var session: SessionStore
+    //func alert(){
+//        let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+    // }
        func getUser(){
            session.listen()
        }
     var body: some View {
+        
         NavigationView{
             VStack{
                 Button(action: session.signOut){
-                        Text("Sign Out")
+                                           Text("Sign Out")
                 }
             }.navigationBarTitle("Account")
 
