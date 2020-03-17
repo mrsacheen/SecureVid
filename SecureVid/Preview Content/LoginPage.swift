@@ -20,11 +20,10 @@ struct LoginPage: View {
             if let error = error {
                 self.error = error.localizedDescription
             }else{
-                self.email = "sfg"
-                self.password = "sdfg"
+                self.email = ""
+                self.password = ""
                 
             }
-           // ContentView()
             
         }
     }
@@ -32,16 +31,32 @@ struct LoginPage: View {
    
         NavigationView{
             VStack() {
+                Image("Camera")
+                .resizable()
+                .aspectRatio(contentMode: ContentMode.fit)
+                .frame(width: 74.0, height: 74.0)
+                .padding(Edge.Set.bottom, 20)
+                
+                Text("Login").bold().font(.title)
+                
+                Text("A video calling app")
+                .font(.subheadline)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 70, trailing: 0))
                 TextField("Email Address", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(width: 350, height: 30)
+                    .textContentType(.emailAddress)
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color("flash-white"))
+                    .cornerRadius(4.0)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 15, trailing: 0))
               
                     //.overlay(Rectangle().stroke(Color.blue, lineWidth: 1))
             
                 SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(width: 350, height: 30)
-                //.overlay(Rectangle().stroke(Color.blue, lineWidth: 1))
+                    .padding()
+                    .background(Color("flash-white"))
+                    .cornerRadius(4.0)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 15, trailing: 0))
                 Button(action: signIn) {
                         Text("Login")
                             .fontWeight(.semibold)
@@ -60,6 +75,22 @@ struct LoginPage: View {
                     .font(.title)
                         .foregroundColor(.red)
                     .padding()
+                }
+                Spacer()
+                HStack(){
+                        Text("Already have an account?")
+                            .foregroundColor(.purple)
+                    NavigationLink(destination: SignupPage()) {
+                        Text("SignUp")
+                            .fontWeight(.semibold)
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.purple)
+                            //.frame(width: 130.0)
+                            //.background(LinearGradient(gradient: Gradient(colors: [Color(.purple),Color(.blue)]), startPoint: .leading, endPoint: .trailing))
+                            .cornerRadius(40)
+                    }
+                   // Spacer(minLength: 30)
                 }
             
             }

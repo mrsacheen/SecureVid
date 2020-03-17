@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Tab_View: View {
+     @State var profile: UserProfile?
     @EnvironmentObject var session: SessionStore
     func getUser(){
         session.listen()
@@ -16,7 +17,7 @@ struct Tab_View: View {
     var body: some View {
         TabView {
             // 2
-            SignedIn_View()
+            SignedIn_View(userProfile: self.profile ??  UserProfile(uid: "", firstName: "", lastName: "", city: ""))
                 .tabItem {
                     VStack {
                         Image(systemName: "person.circle")

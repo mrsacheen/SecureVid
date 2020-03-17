@@ -11,12 +11,9 @@ import SwiftUI
 struct CircleImage: View {
     var body: some View {
         VStack{
-            Text("Welcome to SecureVid")
-                .fontWeight(.semibold)
-            .padding()
-                .font(.system(size: 30))
                // .bold()
             Image("Camera")
+            .resizable()
             .clipShape(Circle())
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 1) )

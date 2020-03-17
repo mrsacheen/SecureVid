@@ -7,7 +7,7 @@ target 'SecureVid' do
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
-pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Storage'
   # Pods for SecureVid
 
   target 'SecureVidTests' do
