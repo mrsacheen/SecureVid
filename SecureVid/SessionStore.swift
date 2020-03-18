@@ -14,7 +14,8 @@ class SessionStore: ObservableObject {
         handle = Auth.auth().addStateDidChangeListener({ (auth, user) in
             if let user = user {
                 self.session = User(uid: user.uid,displayName: user.displayName, email: user.email)
-            } else {
+            }
+            else {
                 self.session = nil
                 self.profile = nil
             }

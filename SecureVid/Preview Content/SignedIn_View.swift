@@ -10,10 +10,10 @@ import SwiftUI
 
 struct SignedIn_View: View {
     var userProfile: UserProfile
-    //  @EnvironmentObject var session: SessionStore
-    //    func getUser(){
-    //        session.listen()
-    //    }
+      @EnvironmentObject var session: SessionStore
+        func getUser(){
+            session.listen()
+       }
     var body: some View {
         NavigationView{
             Form{
