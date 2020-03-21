@@ -11,7 +11,11 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View{
-        AuthenticationView()
+        ZStack{
+            AuthenticationView()
+        }
+        
+        //CameraView()
     }
 }
 
