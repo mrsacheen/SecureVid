@@ -41,31 +41,44 @@ struct AuthenticationView: View {
                     if (session.session != nil){
                         
                         //show.toggle()
-                        VStack{
-                            //   show.toggle()
-                            TabView {
-                                // 2
-                                
-                                SignedIn_View(userProfile: self.profile ??  UserProfile(uid: "", firstName: "", lastName: "", city: ""))
+                        ZStack{
+                            
+                            VStack{
+                                //   show.toggle()
+                                TabView {
+                                    // 2
+                                    
+                                    SignedIn_View(userProfile: self.profile ??  UserProfile(uid: "", firstName: "", lastName: "", city: ""))
+                                        .tabItem {
+                                            VStack {
+                                                Image(systemName: "person.circle")
+                                                Text("Home")
+                                            }
+                                    }.tag(1)
+                                    
+                                    //NavigationView{
+                                       SettingsView(userProfile: self.profile ??  UserProfile(uid: "", firstName: "", lastName: "", city: ""))
+                                        
+                                   // }
                                     .tabItem {
                                         VStack {
-                                            Image(systemName: "person.circle")
-                                            Text("Home")
+                                            Image(systemName: "gear")
+                                            Text("Account")
                                         }
-                                }.tag(1)
-                                
-                                //NavigationView{
-                                   SettingsView(userProfile: self.profile ??  UserProfile(uid: "", firstName: "", lastName: "", city: ""))
-                                    
-                               // }
-                                .tabItem {
-                                    VStack {
-                                        Image(systemName: "gear")
-                                        Text("Account")
-                                    }
-                                }.tag(2)
+                                    }.tag(2)
+//                                    Camera_View()
+//                                        .tabItem{
+//                                            VStack{
+//                                                Image(systemName: "video.fill")
+//                                                Text("Camera")
+//                                            }
+                                   // }
+                                }
+                               // background(CameraView().edgesIgnoringSafeArea(.all))
                             }
+                            
                         }
+                        
                     }
                         
                         
