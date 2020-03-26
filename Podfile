@@ -8,6 +8,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'LibSignalProtocolSwift', '~> 1.3'
   # Pods for SecureVid
 
   target 'SecureVidTests' do

@@ -73,7 +73,7 @@ struct AuthenticationView: View {
 //                                                Text("Camera")
 //                                            }
                                    // }
-                                }
+                                }.colorScheme(.dark)
                                // background(CameraView().edgesIgnoringSafeArea(.all))
                             }
                             

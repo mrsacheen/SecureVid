@@ -9,27 +9,27 @@
 import SwiftUI
 import AVFoundation
 
-struct Camera_View: View {
-    @State var isShowingCameraView = false
-    
-    var body: some View {
-        NavigationView{
-            VStack {
-                Button(action : {
-                    print("Button Pressed")
-                    self.isShowingCameraView.toggle()
-                }, label : {
-                    Text("Show Camera Preview")
-                })
-                
-                CameraView()
-                    .edgesIgnoringSafeArea(.all)
-                
-            }
-        }
-        
-    }
-}
+//struct Camera_View: View {
+//    @State var isShowingCameraView = false
+//
+//    var body: some View {
+//        NavigationView{
+//            VStack {
+//                Button(action : {
+//                    print("Button Pressed")
+//                    self.isShowingCameraView.toggle()
+//                }, label : {
+//                    Text("Show Camera Preview")
+//                })
+//
+//                CameraView()
+//                    .edgesIgnoringSafeArea(.all)
+//
+//            }
+//        }
+//
+//    }
+//}
 struct CameraView : UIViewControllerRepresentable {
     // Init your ViewController
     func makeUIViewController(context: UIViewControllerRepresentableContext<CameraView>) -> UIViewController {
@@ -67,8 +67,8 @@ class CameraViewController : UIViewController {
     }
 }
 
-struct CameraView_Previews: PreviewProvider {
-    static var previews: some View {
-        Camera_View()
-    }
-}
+//struct CameraView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Camera_View()
+//    }
+//}
